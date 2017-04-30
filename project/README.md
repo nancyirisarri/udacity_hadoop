@@ -4,6 +4,8 @@
 
 - To give the monetary value for the highest individual sale for each separate store, use the files in [highest_sale](https://github.com/nancyirisarri/udacity_hadoop/tree/master/project/highest_sale).
 
+- To give the total number of sales and the total sales value from all the stores, use the files in [total_sales](https://github.com/nancyirisarri/udacity_hadoop/tree/master/project/total_sales).
+
 ## How To
 1.	Modify the given mapper.py and reducer.py for the input and output data.
 
