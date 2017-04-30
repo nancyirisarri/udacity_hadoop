@@ -7,7 +7,7 @@ oldKey = None
 
 # Loop around the data
 # It will be in the format key\tval
-# Where key is the store name, val is the sale amount
+# Where key is the item description, val is the sale amount
 #
 # All the costs for a particular item will be presented,
 # then the key will change and we'll be dealing with the next item
