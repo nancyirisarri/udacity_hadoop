@@ -1,9 +1,8 @@
 ## Contents
 
-- To give a sales breakdown by product category across all the stores:
-  - sales_per_category/mapper.py
-  - sales_per_category/reducer.py
--
+- To give a sales breakdown by product category across all the stores, use the mapper and reducer in [sales_per_category](https://github.com/nancyirisarri/udacity_hadoop/tree/master/project/sales_per_category).
+
+- To give the monetary value for the highest individual sale for each separate store, use the files in [highest_sale](https://github.com/nancyirisarri/udacity_hadoop/tree/master/project/highest_sale).
 
 ## How To
 1.	Modify the given mapper.py and reducer.py for the input and output data.
@@ -30,7 +29,7 @@ and simulate the pipeline
 4.	Run the job
 
 ```shell
-> hs mapper.py reducer.py input output
+> hs code/mapper.py code/reducer.py input output
 ```
 
 5. Once the job is finished, check the output file
