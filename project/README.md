@@ -6,7 +6,8 @@
 
 - To give the total number of sales and the total sales value from all the stores, use the files in [total_sales](https://github.com/nancyirisarri/udacity_hadoop/tree/master/project/total_sales).
 
-## How To
+## How to Run the Files on a Cloudera Distribution including Apache Hadoop 
+
 1.	Modify the given mapper.py and reducer.py for the input and output data.
 
 2.	To run a test, make a subset of the data containing the first 50 lines

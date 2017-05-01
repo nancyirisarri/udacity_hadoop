@@ -3,7 +3,6 @@
 import sys
 
 maxSales = {}
-oldKey = None
 
 # Loop around the data
 # It will be in the format key\tval
@@ -19,16 +18,10 @@ for line in sys.stdin:
         continue
 
     thisKey, thisSale = data_mapped
-
-    if oldKey and oldKey != thisKey:
-        oldKey = thisKey;
-
-    oldKey = thisKey
     
     if thisKey not in maxSales or float(thisSale) > maxSales[thisKey]:
         maxSales[thisKey] = float(thisSale)
 
-if oldKey != None:
-    for key, value in sorted(maxSales.iteritems()):
-        print key, "\t", value
+for key, value in sorted(maxSales.iteritems()):
+    print key, "\t", value
 
