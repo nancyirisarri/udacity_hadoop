@@ -1,10 +1,20 @@
 ## Contents
 
-- To give a sales breakdown by product category across all the stores, use the mapper and reducer in [sales_per_category](https://github.com/nancyirisarri/udacity_hadoop/tree/master/project/sales_per_category).
+The following mappers and reducers work on the given file *purchases.txt*
 
-- To give the monetary value for the highest individual sale for each separate store, use the files in [highest_sale](https://github.com/nancyirisarri/udacity_hadoop/tree/master/project/highest_sale).
+- Give a sales breakdown by product category across all the stores with [sales_per_category](https://github.com/nancyirisarri/udacity_hadoop/tree/master/project/sales_per_category).
 
-- To give the total number of sales and the total sales value from all the stores, use the files in [total_sales](https://github.com/nancyirisarri/udacity_hadoop/tree/master/project/total_sales).
+- Find the monetary value for the highest individual sale for each separate store with [highest_sale](https://github.com/nancyirisarri/udacity_hadoop/tree/master/project/highest_sale).
+
+- Give the total number of sales and the total sales value from all the stores using [total_sales](https://github.com/nancyirisarri/udacity_hadoop/tree/master/project/total_sales).
+
+The following mappers and reducers work on the given file *access_log*
+
+- Find the number of hits on the page */assets/js/the-associates.js* with [hits_to_page](https://github.com/nancyirisarri/udacity_hadoop/tree/master/project/hits_to_page).
+
+- How many hits were made by a specific IP address using [hits_from_ip](https://github.com/nancyirisarri/udacity_hadoop/tree/master/project/hits_from_ip).
+
+- Find the hits and the path of the most popular file, i.e. path that occurs most often in a server access log with [most_popular](https://github.com/nancyirisarri/udacity_hadoop/tree/master/project/most_popular).
 
 ## How to Run the Files on a Cloudera Distribution including Apache Hadoop 
 
