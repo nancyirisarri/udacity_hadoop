@@ -1,8 +1,6 @@
 #!/usr/bin/python
-
 import sys
 
-itemsTotal = {}
 
 # Loop around the data
 # It will be in the format key\tval
@@ -11,6 +9,8 @@ itemsTotal = {}
 # All the costs for a particular item will be presented,
 # If it is in the map, add the sale amount to the value,
 # else add a new key/value pair to the dictionary.
+
+itemsTotal = {}
 
 for line in sys.stdin:
     data_mapped = line.strip().split("\t")
@@ -27,5 +27,4 @@ for line in sys.stdin:
         itemsTotal[thisKey] = float(thisSale)
 
 for key, value in itemsTotal.iteritems():
-    print key, "\t", value
-
+    print(key, "\t", value)

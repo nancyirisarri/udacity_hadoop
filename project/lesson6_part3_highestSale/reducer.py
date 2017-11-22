@@ -1,8 +1,6 @@
 #!/usr/bin/python
-
 import sys
 
-maxSales = {}
 
 # Loop around the data
 # It will be in the format key\tval
@@ -10,6 +8,8 @@ maxSales = {}
 #
 # All the sales for a particular store will be presented,
 # then the key will change and we'll be dealing with the next store
+
+maxSales = {}
 
 for line in sys.stdin:
     data_mapped = line.strip().split("\t")
@@ -23,5 +23,5 @@ for line in sys.stdin:
         maxSales[thisKey] = float(thisSale)
 
 for key, value in sorted(maxSales.iteritems()):
-    print key, "\t", value
-
+    print(key, "\t", value)
+    

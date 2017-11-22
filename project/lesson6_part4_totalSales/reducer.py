@@ -1,9 +1,6 @@
 #!/usr/bin/python
-
 import sys
 
-salesCount = 0
-salesValue = 0
 
 # Loop around the data
 # It will be in the format val\t
@@ -12,6 +9,9 @@ salesValue = 0
 # All the sales for a particular store will be presented.
 # For each a counter will be increased and the value of the
 # sale amount added to a variable.
+
+salesCount = 0
+salesValue = 0
 
 for line in sys.stdin:
     data_mapped = line.strip().split("\t")
@@ -25,5 +25,4 @@ for line in sys.stdin:
     salesCount += 1
     salesValue += float(thisSale)
 
-print salesCount, "\t", salesValue
-
+print(salesCount, "\t", salesValue)

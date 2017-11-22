@@ -1,10 +1,6 @@
 #!/usr/bin/python
-
 import sys
 
-maximum = 0
-popPage = None
-pages = {}
 
 # Loop around the data
 # It will be in the format page\t
@@ -14,6 +10,10 @@ pages = {}
 # pair to the dictionary; else increase the value for the page.
 # Then, if the maximum is less than the count for this page,
 # update the maximum and the variable with the most popular page.
+
+maximum = 0
+popPage = None
+pages = {}
 
 for line in sys.stdin:
     data_mapped = line.strip().split("\t")
@@ -33,4 +33,4 @@ for line in sys.stdin:
         maximum = pages[thisKey]
         popPage = thisKey
 
-print popPage, "\t", maximum
+print(popPage, "\t", maximum)

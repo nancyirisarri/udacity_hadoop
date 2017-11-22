@@ -1,12 +1,12 @@
 #!/usr/bin/python
-
 import sys
 
-count = 0
 
 # Loop around the data
 # Since we used a regex and evaluated the request, here only count 
 # the results from the mapper.
+
+count = 0
 
 for line in sys.stdin:
     data_mapped = line.strip().split("\t")
@@ -21,5 +21,4 @@ for line in sys.stdin:
 
     count += 1
     
-print '10.99.99.186', "\t", count
-
+print('10.99.99.186', "\t", count)

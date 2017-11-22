@@ -1,21 +1,18 @@
 #!/usr/bin/python
+import re
+import sys
+
 
 # Loop around the data
 # In the mapper we used a regex and split the body. Here we look
 # and count for the words fantastic and fantastically.
 
-import re
-import sys
-
-
 count = 0
 ids = []
 last_id = 0
-
 p = re.compile(r'\bfantastic\b', re.IGNORECASE)
 
 for line in sys.stdin:
-
     data_mapped = line.strip().split("\t")
 
     # Something has gone wrong. Skip this line.

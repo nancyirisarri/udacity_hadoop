@@ -22,6 +22,7 @@ import sys
 # question mark ('?'), or else 'body' contains exactly one such punctuation mark as the 
 # last character. There is no need to parse the HTML inside 'body'. Also, do not pay
 # special attention to newline characters.
+
 def mapper():
     reader = csv.reader(sys.stdin, delimiter='\t')
     writer = csv.writer(sys.stdout, delimiter='\t', quotechar='"', quoting=csv.QUOTE_ALL)
